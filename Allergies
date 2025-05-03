@@ -1,0 +1,134 @@
+<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="Allergies Form" Height="400" Width="600">
+    
+    <Border Background="#E6F7FF" 
+            BorderBrush="#A0CFEF" 
+            BorderThickness="2" 
+            CornerRadius="8" 
+            Padding="20" 
+            Width="450"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+        <StackPanel>
+            <!-- Title -->
+            <TextBlock Text="Allergies" 
+                       FontWeight="Bold" 
+                       FontSize="20"
+                       Margin="0,0,0,15"/>
+            
+            <!-- Medications -->
+            <StackPanel Margin="0,0,0,15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock Grid.Column="0" 
+                               Text="Are you allergic to any medications?" 
+                               VerticalAlignment="Center"/>
+                    
+                    <StackPanel Grid.Column="2" 
+                                Orientation="Horizontal" 
+                                HorizontalAlignment="Right">
+                        <RadioButton Content="Yes" GroupName="MedAllergy" Margin="0,0,10,0"/>
+                        <RadioButton Content="No" GroupName="MedAllergy" IsChecked="True"/>
+                    </StackPanel>
+                </Grid>
+                
+                <Grid Margin="0,5,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock Grid.Column="0" 
+                               Text="Please list:" 
+                               VerticalAlignment="Center" 
+                               Margin="0,0,10,0"/>
+                    
+                    <TextBox Grid.Column="1"/>
+                </Grid>
+            </StackPanel>
+            
+            <!-- Latex -->
+            <StackPanel Margin="0,0,0,15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock Grid.Column="0" 
+                               Text="Are you allergic to latex?" 
+                               VerticalAlignment="Center"/>
+                    
+                    <StackPanel Grid.Column="2" 
+                                Orientation="Horizontal" 
+                                HorizontalAlignment="Right">
+                        <RadioButton Content="Yes" GroupName="LatexAllergy" Margin="0,0,10,0"/>
+                        <RadioButton Content="No" GroupName="LatexAllergy" IsChecked="True"/>
+                    </StackPanel>
+                </Grid>
+                
+                <Grid Margin="0,5,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock Grid.Column="0" 
+                               Text="Please list:" 
+                               VerticalAlignment="Center" 
+                               Margin="0,0,10,0"/>
+                    
+                    <TextBox Grid.Column="1"/>
+                </Grid>
+            </StackPanel>
+            
+            <!-- Foods -->
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock Grid.Column="0" 
+                               Text="Are you allergic to any foods?" 
+                               VerticalAlignment="Center"/>
+                    
+                    <StackPanel Grid.Column="2" 
+                                Orientation="Horizontal" 
+                                HorizontalAlignment="Right">
+                        <RadioButton Content="Yes" GroupName="FoodAllergy" Margin="0,0,10,0"/>
+                        <RadioButton Content="No" GroupName="FoodAllergy" IsChecked="True"/>
+                    </StackPanel>
+                </Grid>
+                
+                <Grid Margin="0,5,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock Grid.Column="0" 
+                               Text="Please list:" 
+                               VerticalAlignment="Center" 
+                               Margin="0,0,10,0"/>
+                    
+                    <TextBox Grid.Column="1"/>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</Window>
