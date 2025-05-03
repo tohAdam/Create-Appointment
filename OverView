@@ -1,0 +1,103 @@
+<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="OverView" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- Lifestyle Section -->
+        <Border Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,0">
+            <DockPanel>
+                <Border DockPanel.Dock="Top" Background="#E3F2FD" BorderBrush="LightGray" BorderThickness="0,0,0,1">
+                    <TextBlock Text="Lifestyle" Padding="10" TextAlignment="Center" FontWeight="Bold"/>
+                </Border>
+                <StackPanel Margin="10">
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Diet: Vegetarian" FontWeight="Medium"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Exercise: 3 times/week" FontWeight="Medium"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Sleep: 7 hours" FontWeight="Medium"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Smoker: Moderate" FontWeight="Medium"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Alcohol: Occasional" FontWeight="Medium"/>
+                    </StackPanel>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+        
+        <!-- Medication Section -->
+        <Border Grid.Column="1" BorderBrush="LightGray" BorderThickness="0,0,1,0">
+            <DockPanel>
+                <Border DockPanel.Dock="Top" Background="#E3F2FD" BorderBrush="LightGray" BorderThickness="0,0,0,1">
+                    <TextBlock Text="Medication" Padding="10" TextAlignment="Center" FontWeight="Bold"/>
+                </Border>
+                <StackPanel Margin="10">
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Vitamins: Multivitamins" FontWeight="Medium"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Minerals: Calcium, magnesium" FontWeight="Medium"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Herbs: Echinacea and ginger" FontWeight="Medium"/>
+                    </StackPanel>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+        
+        <!-- Vital Status Section -->
+        <Border Grid.Column="2" BorderBrush="LightGray" BorderThickness="0,0,1,0">
+            <DockPanel>
+                <Border DockPanel.Dock="Top" Background="#E3F2FD" BorderBrush="LightGray" BorderThickness="0,0,0,1">
+                    <TextBlock Text="Vital Status" Padding="10" TextAlignment="Center" FontWeight="Bold"/>
+                </Border>
+                <StackPanel Margin="10">
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Sugar level: 110 mg/dL" FontWeight="Medium"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Pulse Rate: 72 bpm" FontWeight="Medium"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Temperature: 36.5 °C" FontWeight="Medium"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Blood Pressure: 120/80 mm/hg" FontWeight="Medium"/>
+                    </StackPanel>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+        
+        <!-- Allergies Section -->
+        <Border Grid.Column="3">
+            <DockPanel>
+                <Border DockPanel.Dock="Top" Background="#E3F2FD" BorderBrush="LightGray" BorderThickness="0,0,0,1">
+                    <TextBlock Text="Allergies" Padding="10" TextAlignment="Center" FontWeight="Bold"/>
+                </Border>
+                <StackPanel Margin="10">
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Animals: Dog, Cat" FontWeight="Medium"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,10">
+                        <TextBlock Text="Foods: Almonds, walnuts" FontWeight="Medium"/>
+                    </StackPanel>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+    </Grid>
+</Window>
